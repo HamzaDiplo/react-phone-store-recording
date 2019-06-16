@@ -1,0 +1,48 @@
+/* These are colors which are predefined in order to be used and changed more easily*/
+:root {
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+}
+/* Colors and font for body part*/
+body {
+  font-family: "Oswald", sans-serif !important;/*Impotrant because bootstrap is overwritting this. Bootstrap has a default value.*/
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+}
+/*Title font Permanent marker*/
+.text-title {
+  font-family: 'Permanent Marker',cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+/*Classes which are made beucause of the color value*/
+.text-blue {
+  color: var(--mainBlue);
+}
+
+.text-bright {
+  color: var(--lightBlue);
+}
+
+.btn-black {
+  background: transparent;
+  text-transfor: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
+}
+
+.btn-black:hover {
+  background: var(--mainDark) !important;
+  color: var(--mainWhite) !important;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainYellow);
+}
